@@ -1,3 +1,7 @@
 <?php
 
-	echo "This is my first hello world in OC!";
+function insult() { 
+	return "Hello, code monkey!";
+}
+
+echo insult();
