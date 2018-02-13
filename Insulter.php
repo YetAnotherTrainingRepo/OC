@@ -33,6 +33,6 @@ class Insulter {
 			"boar-pig" 
 		);
 		
-		return array_rand( $firstAdjs ) . " " . array_rand( $secondAdjs ) . " " . array_rand( $nouns );
+		return $firstAdjs[rand( 0, count( $firstAdjs ) - 1 )] . " " . $secondAdjs[rand( 0, count( $secondAdjs ) - 1 )] . " " . $nouns[rand( 0, count( $nouns ) - 1 )];
 	}
 }
