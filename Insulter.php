@@ -7,7 +7,7 @@ class Insulter {
 	}
 
 	static function namedInsult( $name ) {
-		return $name - ", thou " . self::generateInsult() . "!";
+		return $name . ", thou " . self::generateInsult() . "!";
 	}
 
 	static function generateInsult() {
