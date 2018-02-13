@@ -1,7 +1,16 @@
 <?php
+include_once "Insulter.php";
 
-function insult() { 
-	return "Hello, code monkey!";
+function insult() {
+	return Insulter::insult();
 }
 
-echo insult();
+function insultName( $name ) {
+	return Insulter::namedInsult( $name );
+}
+
+if ( isset( $_GET['name'] ) ) {
+	echo insultName( $_GET['name'] );
+} else {
+	echo insult();
+}
